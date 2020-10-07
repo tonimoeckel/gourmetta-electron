@@ -1,0 +1,35 @@
+{
+  "name": "gourmetta-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gourmetta-parser": "^1.0.1"
+  },
+  "devDependencies": {
+    "electron": "^10.1.3",
+    "electron-builder": "^22.8.1"
+  },
+  "build": {
+    "productName": "Gourmetta Export",
+    "appId": "scripter.gourmettaExport",
+    "win": {
+      "target": ["portable"]
+    },
+    "portable": {
+      "artifactName": "GourmettaExporter.exe"
+    },
+    "directories": {
+      "output": "./output",
+      "app": "./"
+    }
+  }
+}

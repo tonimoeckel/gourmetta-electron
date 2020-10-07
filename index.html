@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gourmetta Export</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container" style="padding: 50px">
+    <form class="form" action="#" id="form">
+        <label for="username">Benutzername: </label><input class="form-control" id="username" name="username" autofocus required>
+        <label for="password">Passwort: </label><input class="form-control" id="password" name="password" required>
+        <br/>
+        <input class="form-control btn btn-lg btn-primary" style="padding: 5px" value="Download" id="submit" type="submit" >
+    </form>
+
+    <p class="text-center" id="response"></p>
+
+    <div class="text-center" style="margin-top: 10px">
+        Node Version <script>document.write(process.versions.node)</script>,
+        Chrome Version <script>document.write(process.versions.chrome)</script>,
+        Electron Version <script>document.write(process.versions.electron)</script>.
+    </div>
+</div>
+<script src='renderer.js'></script>
+
+</body>
+</html>
